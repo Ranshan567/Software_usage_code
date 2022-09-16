@@ -2,15 +2,3 @@
 
 ## TEST
 
-
-import ast
-import sys
-import subprocess
-import pkg_resources
-
-
-class SetupHelper(object):
-    """
-    SetupHelper streamlines the population of setup() function calls with
-    contents from __init__.py and README.md.
-    """
