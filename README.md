@@ -29,5 +29,6 @@ SIFT 4G Annotator will annotate a variant list (.vcf file) with predictions from
 
 <img src="http://static.runoob.com/images/runoob-logo.png" width="50%">
 
+![image](https://user-images.githubusercontent.com/93338266/190970393-1b6fbdaa-6657-474b-92e3-7133fe56788b.png)
 
 
