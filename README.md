@@ -23,6 +23,9 @@ SIFT 4G Annotator will annotate a variant list (.vcf file) with predictions from
 | 1	| 900717	| CTTAT	| C	| ENST00000338591	| ENSG00000187961	| KLHL17	| UTR_3	| FRAMESHIFT | DELETION	| NA	| NA	| NA	| NA	| NA	| NA	| novel	| NA |
 
 
-
+| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
 
 
