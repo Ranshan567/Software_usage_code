@@ -14,7 +14,7 @@ SIFT官网[SIFT HOME](https://sift.bii.a-star.edu.sg/index.html)
 
 SIFT 4G Annotator will annotate a variant list (.vcf file) with predictions from a SIFT 4G database.
 
-** ! VCF file must be sorted by chromosome and position to be annotated properly. **
+**! VCF file must be sorted by chromosome and position to be annotated properly.**
 
 
 
