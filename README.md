@@ -22,9 +22,9 @@ SIFT 4G Annotator will annotate a variant list (.vcf file) with predictions from
 
 To run the SIFT 4G Annotator on Linux or Mac via command line, type the following command into the terminal:
 
-`
+```
 java -jar <Path to SIFT4G_Annotator> -c -i <Path to input vcf file> -d <Path to SIFT4G database directory> -r <Path to your results folder> -t
-`
+```
 
 **Note:To run the Annotator via command line "-c" is essential (see the commandline parameters in the table below). If "-t" option is not used SIFT 4G extracts annotator single transcript per variant.**
 
