@@ -16,13 +16,16 @@ SIFT 4G Annotator will annotate a variant list (.vcf file) with predictions from
 
 **! VCF file must be sorted by chromosome and position to be annotated properly.**
 
- **Annotate variants:**
+**1. If your organism is not listed, you can create your own [SIFT prediction database](https://sift.bii.a-star.edu.sg/sift4g/SIFT4G_codes.html)**
+
+ **2. Annotate variants:**
 
 To run the SIFT 4G Annotator on Linux or Mac via command line, type the following command into the terminal:
 
 `
 java -jar <Path to SIFT4G_Annotator> -c -i <Path to input vcf file> -d <Path to SIFT4G database directory> -r <Path to your results folder> -t
 `
+
 **Note:To run the Annotator via command line "-c" is essential (see the commandline parameters in the table below). If "-t" option is not used SIFT 4G extracts annotator single transcript per variant.**
 
 Command line Options:
@@ -35,7 +38,7 @@ Command line Options:
 | -r	| Path to your output results folder |
 | -t	| To extract annotations for multiple transcripts (Optional) |
 
-**SIFT 4G Output**
+**3. SIFT 4G Output**
 
 | CHROM	| POSITION	| REF_ALLELE	| ALT_ALLELE	| TRANSCRIPT_ID	| GENE_ID	| GENE_NAME	REGION	| VARIANT_TYPE	| REF_AA	| ALT_AA	| AA_POS	| SIFT_SCORE	| SIFT_MEDIAN	| NUM_SEQs	| dbSNP	| PREDICTION |
 | :-----| :---- | :---- | :----| :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
