@@ -16,6 +16,8 @@ SIFT 4G Annotator will annotate a variant list (.vcf file) with predictions from
 
 **! VCF file must be sorted by chromosome and position to be annotated properly.**
 
+**SIFT 4G Output**
+
 | CHROM	| POSITION	| REF_ALLELE	| ALT_ALLELE	| TRANSCRIPT_ID	| GENE_ID	| GENE_NAME	REGION	| VARIANT_TYPE	| REF_AA	| ALT_AA	| AA_POS	| SIFT_SCORE	| SIFT_MEDIAN	| NUM_SEQs	| dbSNP	| PREDICTION |
 | :-----| :---- | :---- | :----| :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 | 1	| 881918	| G	| A	| ENST00000327044	| ENSG00000188976	| NOC2L	| CDS	| NONSYNONYMOUS	| S	| L	| 556	| 0.095	| 2.54	| 44	| rs35471880	| TOLERATED |
@@ -23,9 +25,7 @@ SIFT 4G Annotator will annotate a variant list (.vcf file) with predictions from
 | 1	| 900717	| CTTAT	| C	| ENST00000338591	| ENSG00000187961	| KLHL17	| UTR_3	| FRAMESHIFT | DELETION	| NA	| NA	| NA	| NA	| NA	| NA	| novel	| NA |
 
 
-| 左对齐 | 右对齐 | 居中对齐 |
-| :-----| ----: | :----: |
-| 单元格 | 单元格 | 单元格 |
-| 单元格 | 单元格 | 单元格 |
+![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png)
+
 
 
