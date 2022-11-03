@@ -2,6 +2,7 @@
 
 ```
 
+# 检查，修复，填充缺失的信息到排序和标准化的gff3中
 agat_convert_sp_gxf2gxf.pl -g 2.gff3 -o 3.gff3
 
 awk '{if ($3 =="CDS") print $0}' 3.gff3 > 4.gff3
