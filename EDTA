@@ -1,0 +1,31 @@
+EDTA介绍
+EDTA是一个用于自动化全基因组的转座元件(transposable elements,TE)从头注释(de-novo)注释和评估TE注释的综合软件。
+EDTA运行和调用软件的流程：
+    LTR预测
+    LTR_FINDER预测LTR
+    LTRharvest预测LTR
+    LTR_retriever确认前两个软件预测的LTR
+    TIR预测
+    Generic Repeat Finder
+    TIR-Learner预测TIR
+    Helitrons预测
+    HelitronScanner
+    filter过滤
+•	以上三种TE预测结束后做basic filter获得full-length TEs
+•	进一步做advance filter，获得raw library
+•	与指定的curated library合并
+•	用RepeatModeler做训练
+•	用指定的CDS做最后的filters
+    获得最终的final TE library
+    Annotation
+    Evaluation
+ 结果文件
+•	genome.mod.EDTA.TElib.fa：最终结果，非冗余的TE库。如果在输入文件中用–curatedlib指定的修正版TE库，则该文件中也将包含这部分序列。
+•	genome.mod.EDTA.TElib.novel.fa: 新TE类型。该文件包括在输入文件中用–curatedlib指定的修正版TE库没有的TE序列，即genome.mod.EDTA.TElib.fa减去–curatedlib指定库(需要–curatedlib参数)。
+•	genome.mod.EDTA.TEanno.gff: 全基因组TE的注释。该文件包括结构完整和结构不完整的TE的注释（需要–anno 1参数）。
+•	genome.mod.EDTA.TEanno.sum: 对全基因组TE注释的总结（需要–anno 1参数）。
+•	genome.mod.MAKER.masked: 低阈值TE的屏蔽。该文件中仅包括长TE（>= 1 kb）序列(需要–anno 1参数)。
+•	genome.mod.EDTA.TE.fa.stat.redun.sum: 简单TE的注释偏差(需要–evaluate 1参数)。
+•	genome.mod.EDTA.TE.fa.stat.nested.sum：嵌套型TE注释的偏差（需要–evaluate 1参数）。
+•	genome.mod.EDTA.TE.fa.stat.all.sum: 注释偏差的概述（需要–evaluate 1参数）。
+ 
